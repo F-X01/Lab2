@@ -1,1 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header {
+    background-color: rgb(51, 37, 19);
+    color: rgb(151, 253, 229);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: rgb(162, 241, 224);
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: rgb(188, 243, 231);
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    border: 1px solid rgb(55, 90, 83);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgb(55, 90, 83);
+}
+
+.bio-hero {
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+}
+
+.bio-hero h2 {
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    background-color: rgb(51, 37, 19);
+    color: rgb(151, 253, 229);
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        margin-left: 20px;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+}
